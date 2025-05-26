@@ -1,30 +1,28 @@
-# Recreate Figma UI
+# Parking App
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A simple Android parking management app built with Kotlin.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/moditjoshi-moveinsynccs-projects/v0-recreate-figma-ui)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/j0A5cLfkKTu)
+## Features
+- View parking availability
+- Clean Material Design UI
+- Responsive layout
 
-## Overview
+## Setup
+1. Clone this repository
+2. Open in Android Studio
+3. Sync Gradle files
+4. Run the app
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Requirements
+- Android Studio Arctic Fox or later
+- Android SDK 21+
+- Kotlin 1.8+
 
-## Deployment
+## Screenshots
+The app displays a clean interface showing parking availability at Dell HQ Office.
 
-Your project is live at:
-
-**[https://vercel.com/moditjoshi-moveinsynccs-projects/v0-recreate-figma-ui](https://vercel.com/moditjoshi-moveinsynccs-projects/v0-recreate-figma-ui)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/j0A5cLfkKTu](https://v0.dev/chat/projects/j0A5cLfkKTu)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## Build APK
+1. Build → Generate Signed Bundle/APK
+2. Choose APK
+3. Create keystore and sign
+4. Install on device

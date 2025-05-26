@@ -5,4 +5,8 @@
     <string name="todays_parking_availability">Today\'s Parking\nAvailability</string>
     <string name="dell_hq_office">Dell HQ Office</string>
     <string name="parking_count">40</string>
+    <string name="menu">Menu</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="building">Building</string>
 </resources>

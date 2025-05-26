@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.widget.ImageView
-import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,15 +18,15 @@ class MainActivity : AppCompatActivity() {
 
         // Setup click listeners for header icons
         findViewById<ImageView>(R.id.menu_icon).setOnClickListener {
-            // Handle menu click
+            // Handle menu click - you can add navigation drawer here
         }
 
         findViewById<ImageView>(R.id.notification_icon).setOnClickListener {
-            // Handle notification click
+            // Handle notification click - you can add notification activity here
         }
 
         findViewById<ImageView>(R.id.profile_icon).setOnClickListener {
-            // Handle profile click
+            // Handle profile click - you can add profile activity here
         }
     }
 }

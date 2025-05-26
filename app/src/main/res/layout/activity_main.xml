@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_gray"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <!-- Header -->
     <androidx.appcompat.widget.Toolbar
@@ -27,13 +29,16 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_menu"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:contentDescription="@string/menu" />
 
-            <!-- Title -->
+            <!-- Title - Left Aligned -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/menu_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
                 android:text="@string/my_bookings"
                 android:textColor="@color/text_black"
                 android:textSize="18sp"
@@ -54,7 +59,8 @@
                     android:layout_marginEnd="8dp"
                     android:src="@drawable/ic_notification"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:contentDescription="@string/notifications" />
 
                 <ImageView
                     android:id="@+id/profile_icon"
@@ -63,7 +69,8 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_profile"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:contentDescription="@string/profile" />
 
             </LinearLayout>
 
@@ -116,7 +123,8 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginEnd="8dp"
-                        android:src="@drawable/ic_building" />
+                        android:src="@drawable/ic_building"
+                        android:contentDescription="@string/building" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -127,7 +135,7 @@
 
                 </LinearLayout>
 
-                <!-- Parking Count - Right Aligned -->
+                <!-- Parking Count - Right Aligned (No P, just 40) -->
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
@@ -135,7 +143,7 @@
                     android:layout_centerVertical="true"
                     android:background="@drawable/circle_orange"
                     android:gravity="center"
-                    android:text="@string/parking_count"
+                    android:text="40"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
